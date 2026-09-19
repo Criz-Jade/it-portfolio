@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Email Server Lab | Crizalrie Jade Gadiano
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<!-- ========================================
+     NAVIGATION
+======================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            &lt;/&gt;
+        </a>
+
+        <div>
+            <strong>Crizalrie Jade Gadiano</strong>
+
+            <span class="nav-subtitle">
+                IT SUPPORT · NETWORK SUPPORT
+            </span>
+        </div>
+
+        <nav>
+            <a href="index.html#about">About</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#education">Education</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+<!-- ========================================
+     PROJECT HERO
+======================================== -->
+
+<section class="hero project-hero">
+
+    <div class="container">
+
+        <p class="eyebrow">
+            ACADEMIC INFRASTRUCTURE PROJECT
+        </p>
+
+        <h1>
+            Email Server <span>Lab</span>
+        </h1>
+
+        <p class="hero-description">
+
+            Microsoft Exchange Server environment built across
+            multiple virtual machines, with Active Directory,
+            DNS, IIS, mail services, certificates, and
+            client testing.
+
+        </p>
+
+        <div class="hero-actions">
+
+            <a href="index.html#projects"
+               class="btn btn-primary">
+
+                ← Back to Projects
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================================
+     CASE STUDY
+======================================== -->
+
+<section class="section">
+
+<div class="container case-study">
+
+
+<!-- ========================================
+     01 · PROJECT OVERVIEW
+======================================== -->
+
+<article class="case-card case-wide">
+
+    <p class="section-label">
+        01 · PROJECT OVERVIEW
+    </p>
+
+    <h2>
+        Building a working email infrastructure
+    </h2>
+
+    <p>
+
+        This academic project focused on setting up and
+        administering a Microsoft Exchange Server environment.
+
+        The lab used multiple virtual machines with different
+        roles so the systems could communicate and support
+        email services.
+
+    </p>
+
+</article>
+
+
+
+<!-- ========================================
+     02 · LAB ARCHITECTURE
+======================================== -->
+
+<article class="case-card case-wide">
+
+    <p class="section-label">
+        02 · LAB ARCHITECTURE
+    </p>
+
+    <h2>
+        How the environment was connected
+    </h2>
+
+
+    <div class="architecture">
+
+
+        <!-- DOMAIN CONTROLLER -->
+
+        <div class="server-box">
+
+            <span>SERVER 01</span>
+
+            <h3>
+                Domain Controller
+            </h3>
+
+            <p>Active Directory</p>
+            <p>DNS</p>
+            <p>AD CS</p>
+
+        </div>
+
+
+        <!-- CONNECTION -->
+
+        <div class="connection">
+
+            <span>
+                Domain / DNS
+            </span>
+
+            <div class="arrow">
+                →
+            </div>
+
+        </div>
+
+
+        <!-- EXCHANGE SERVER -->
+
+        <div class="server-box">
+
+            <span>SERVER 02</span>
+
+            <h3>
+                Exchange Server
+            </h3>
+
+            <p>Exchange</p>
+            <p>IIS</p>
+            <p>OWA</p>
+
+        </div>
+
+
+        <!-- CONNECTION -->
+
+        <div class="connection">
+
+            <span>
+                SMTP / IMAP
+            </span>
+
+            <div class="arrow">
+                →
+            </div>
+
+        </div>
+
+
+        <!-- CLIENT -->
+
+        <div class="server-box">
+
+            <span>CLIENT</span>
+
+            <h3>
+                Client System
+            </h3>
+
+            <p>Thunderbird</p>
+            <p>Email Testing</p>
+
+        </div>
+
+
+    </div>
+
+</article>
+
+
+
+<!-- ========================================
+     03 · ENVIRONMENT
+======================================== -->
+
+<article class="case-card case-wide">
+
+    <p class="section-label">
+        03 · ENVIRONMENT
+    </p>
+
+    <h2>
+        Multi-VM Lab
+    </h2>
+
+
+    <ul class="case-list">
+
+        <li>
+            <strong>Domain Controller:</strong>
+            Active Directory and DNS services
+        </li>
+
+        <li>
+            <strong>Exchange Server:</strong>
+            dedicated server for Exchange
+        </li>
+
+        <li>
+            <strong>Member/Client Server:</strong>
+            communication and email testing
+        </li>
+
+        <li>
+            <strong>Tools:</strong>
+            Windows Server, PowerShell, IIS,
+            OWA, and Thunderbird
+        </li>
+
+    </ul>
+
+</article>
+
+
+
+<!-- ========================================
+     04 · WHAT I DID
+======================================== -->
+
+<article class="case-card case-wide">
+
+    <p class="section-label">
+        04 · WHAT I DID
+    </p>
+
+    <h2>
+        Configuration & Implementation
+    </h2>
+
+
+    <div class="steps-grid">
+
+
+        <div>
+
+            <span class="step-number">01</span>
+
+            <h3>
+                Prepared Active Directory
+            </h3>
+
+            <p>
+                Prepared the domain environment and
+                verified the required server configuration.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span class="step-number">02</span>
+
+            <h3>
+                Configured DNS
+            </h3>
+
+            <p>
+                Configured forward and reverse DNS records
+                required for communication between systems.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span class="step-number">03</span>
+
+            <h3>
+                Installed Prerequisites
+            </h3>
+
+            <p>
+                Installed the required Windows components
+                and Exchange prerequisites before installation.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span class="step-number">04</span>
+
+            <h3>
+                Prepared Exchange
+            </h3>
+
+            <p>
+                Completed Active Directory preparation and
+                the required Exchange organization setup.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span class="step-number">05</span>
+
+            <h3>
+                Configured Mailboxes
+            </h3>
+
+            <p>
+                Created test users and associated mailboxes
+                for the lab environment.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span class="step-number">06</span>
+
+            <h3>
+                Tested Email Access
+            </h3>
+
+            <p>
+                Configured client-side email testing using
+                Outlook on the web and Thunderbird with
+                SMTP/IMAP.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</article>
+
+
+
+<!-- ========================================
+     05 · PROJECT EVIDENCE
+======================================== -->
+
+<article class="case-card case-wide">
+
+    <p class="section-label">
+        05 · PROJECT EVIDENCE
+    </p>
+
+    <h2>
+        Configuration & Testing
+    </h2>
+
+
+    <p class="evidence-intro">
+
+        Selected screenshots from the lab environment
+        showing configuration, implementation, and testing.
+
+    </p>
+
+
+    <div class="evidence-grid">
+
+
+        <!-- DNS -->
+
+        <figure class="evidence-card">
+
+            <img
+                src="images/exchange-dns.png"
+                alt="DNS configuration for the Exchange Server lab"
+            >
+
+            <figcaption>
+
+                <strong>
+                    DNS Configuration
+                </strong>
+
+                <span>
+                    DNS records configured to support the
+                    Exchange environment and mail services.
+                </span>
+
+            </figcaption>
+
+        </figure>
+
+
+
+        <!-- EXCHANGE -->
+
+        <figure class="evidence-card">
+
+            <img
+                src="images/exchange-installation.png"
+                alt="Microsoft Exchange Server installation"
+            >
+
+            <figcaption>
+
+                <strong>
+                    Exchange Installation
+                </strong>
+
+                <span>
+                    Exchange Server installation after
+                    preparing the required server components
+                    and prerequisites.
+                </span>
+
+            </figcaption>
+
+        </figure>
+
+
+
+        <!-- MAILBOXES -->
+
+        <figure class="evidence-card">
+
+            <img
+                src="images/exchange-mailboxes.png"
+                alt="Exchange mailbox configuration"
+            >
+
+            <figcaption>
+
+                <strong>
+                    Mailbox Configuration
+                </strong>
+
+                <span>
+                    Test users and mailboxes configured
+                    within the lab environment.
+                </span>
+
+            </figcaption>
+
+        </figure>
+
+
+
+        <!-- THUNDERBIRD -->
+
+        <figure class="evidence-card">
+
+            <img
+                src="images/thunderbird-testing.png"
+                alt="Thunderbird email client testing"
+            >
+
+            <figcaption>
+
+                <strong>
+                    Client Testing
+                </strong>
+
+                <span>
+                    Thunderbird configured for SMTP and
+                    IMAP communication during testing.
+                </span>
+
+            </figcaption>
+
+        </figure>
+
+
+    </div>
+
+</article>
+
+
+
+<!-- ========================================
+     06 + 07 · TROUBLESHOOTING / LEARNING
+======================================== -->
+
+<div class="case-grid">
+
+
+    <article class="case-card">
+
+        <p class="section-label">
+            06 · TROUBLESHOOTING
+        </p>
+
+        <h2>
+            Working Through Dependencies
+        </h2>
+
+        <p>
+
+            One of the main lessons from the lab was that
+            server installations depend on careful preparation.
+
+            I had to pay attention to prerequisites,
+            system resources, permissions, commands, and
+            configuration details before moving to the
+            next stage.
+
+        </p>
+
+    </article>
+
+
+
+    <article class="case-card">
+
+        <p class="section-label">
+            07 · WHAT I LEARNED
+        </p>
+
+        <h2>
+            My Perspective
+        </h2>
+
+        <p>
+
+            Repeating the Exchange setup helped me understand
+            how much planning and verification are involved
+            in real-world infrastructure work.
+
+            The project required patience when blockers
+            appeared and strengthened my problem-solving
+            approach when troubleshooting a multi-system
+            environment.
+
+        </p>
+
+    </article>
+
+
+</div>
+
+
+
+<!-- ========================================
+     08 · TECHNOLOGIES
+======================================== -->
+
+<article class="case-card case-wide">
+
+    <p class="section-label">
+        08 · TECHNOLOGIES
+    </p>
+
+
+    <div class="tech-tags">
+
+        <span>Exchange Server</span>
+        <span>Windows Server</span>
+        <span>Active Directory</span>
+        <span>DNS</span>
+        <span>IIS</span>
+        <span>PowerShell</span>
+        <span>SMTP</span>
+        <span>IMAP</span>
+        <span>SSL/TLS</span>
+        <span>Virtual Machines</span>
+
+    </div>
+
+</article>
+
+
+
+<!-- ========================================
+     PRIVACY NOTE
+======================================== -->
+
+<aside class="privacy-note">
+
+    <strong>Portfolio note:</strong>
+
+    This public page intentionally leaves out private
+    lab credentials, exact internal addresses, and other
+    environment-specific details.
+
+</aside>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+
+<!-- ========================================
+     FOOTER
+======================================== -->
+
+<footer class="footer">
+
+    <p>
+        © <span id="year"></span>
+        Crizalrie Jade Gadiano ·
+        IT Support & Network Support
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
